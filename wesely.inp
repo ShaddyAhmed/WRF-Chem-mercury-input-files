@@ -1,0 +1,7 @@
+&control
+
+wrf_dir = 'WRFRUNDIR'
+domains = 1,
+
+/
+

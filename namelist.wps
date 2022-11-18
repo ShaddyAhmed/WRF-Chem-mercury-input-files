@@ -1,0 +1,60 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 2,
+ start_date = '2020-03-01_00:00:00', '2020-03-01_00:00:00',
+ end_date   = '2020-05-01_00:00:00', '2020-05-01_00:00:00',
+ interval_seconds = 21600
+ io_form_geogrid = 2,
+/
+
+&geogrid
+ parent_id         =   1, 1, 2,
+ parent_grid_ratio =   1, 1, 5,
+ i_parent_start    =   1, 42, 37,
+ j_parent_start    =   1, 33, 37,
+ e_we              =   176, 92, 111,
+ e_sn              =   132, 92, 111,
+ geog_data_res     = 'default', 'default', 'default',
+ dx = 100000
+ dy = 100000
+ map_proj = 'polar',
+! ref_lat   = 71.2906,
+! ref_lon   = -156.7886,
+! truelat1  = 71.2906,
+! truelat2  = 71.2906,
+! stand_lon = -156.7886,
+ ref_lat   = 89.9,
+ ref_lon   = 25,
+ truelat1  = 90,
+ truelat2  = 89.9,
+ stand_lon = 25,
+ ref_x = 88.0,
+ ref_y = 66.0,
+ geog_data_path = '/data/sahmed/WPS_GEOG'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = '_FILE_ungrib_',
+/
+
+&metgrid
+ fg_name = '_FILE_metgrid_',
+ io_form_metgrid = 2,
+ constants_name = 'TAVGSFC',
+/
+
+&mod_levs
+ press_pa = 201300 , 200100 , 100000 ,
+             95000 ,  90000 ,
+             85000 ,  80000 ,
+             75000 ,  70000 ,
+             65000 ,  60000 ,
+             55000 ,  50000 ,
+             45000 ,  40000 ,
+             35000 ,  30000 ,
+             25000 ,  20000 ,
+             15000 ,  10000 ,
+              5000 ,   1000
+ /
+

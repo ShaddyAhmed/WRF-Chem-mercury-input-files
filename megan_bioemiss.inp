@@ -1,0 +1,9 @@
+&control
+
+domains = 1,
+start_lai_mnth = 1,
+end_lai_mnth = 12,
+wrf_dir = '/scratchu/sahmed/WRFChem_MOSAIC/snow_test',
+megan_dir = '/data/marelle/WRFChem/wrf_utils/MEGAN'
+
+/

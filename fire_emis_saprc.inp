@@ -1,0 +1,20 @@
+&control
+domains           = 1,
+fire_directory    = '/data/sahmed/WRFChem/grid_finn_fire_emis_v2020/',
+fire_filename(1)  = 'FINNv2.5_modvrs_SAPRC_2020_c20211213.txt',
+wrf_directory     = '/scratchu/sahmed/WRFChem_MOSAIC/snow_test',
+start_date        = '2020-03-01',
+end_date          = '2020-05-01',
+
+wrf2fire_map = 'co -> CO', 'no -> NO', 'so2 -> SO2', 'nh3 -> NH3',
+               'acet-> ACET', 'alk1-> ALK1', 'alk2-> ALK2', 'alk3-> ALK3',
+               'alk4-> ALK4', 'alk5-> ALK5', 'aro1-> ARO1', 'aro2-> ARO2',
+               'bald-> BALD', 'ccho-> CCHO', 'cco_oh-> CCO_OH', 'ethene-> ETHENE',
+               'hcho-> HCHO', 'hcn-> HCN', 'hcooh-> HCOOH', 'hono-> HONO',
+               'isoprene-> ISOPRENE', 'mek-> MEK', 'meoh-> MEOH', 'methacro-> METHACRO',
+               'mgly-> MGLY', 'mvk-> MVK', 'ole1-> OLE1', 'ole2-> OLE2', 'phen-> PHEN',
+               'prod2-> PROD2', 'rcho-> RCHO','terp-> TRP1',
+                'oc -> OC;aerosol', 'bc -> BC;aerosol','sulf -> -0.01*PM25 + 0.02*PM10;aerosol',
+                'pm25 -> 1.00*PM25+-1.00*OC+-1.00*BC;aerosol','pm10 -> 1.00*PM10+-1.00*PM25;aerosol'
+
+/
