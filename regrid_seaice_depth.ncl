@@ -1,6 +1,8 @@
 ;----------------------------------------------------------------------
 ; Script to regrid sea ice depth data from the Arctic Ocean Physics
-; Reanalysis to the WRF grid.
+; Reanalysis to the WRF grid. Data for sea ice depth can be retrieved from
+; the Copernicus Marine Service at: 
+; https://data.marine.copernicus.eu/product/ARCTIC_MULTIYEAR_PHY_002_003/description
 ; Sea ice depth data is on a curvilinear grid and is regridded to the
 ; WRF grid using the ESMF regrid function in NCL.
 ;----------------------------------------------------------------------
