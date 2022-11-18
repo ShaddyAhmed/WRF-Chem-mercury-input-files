@@ -1,7 +1,8 @@
 ;----------------------------------------------------------------------
 ; Script to regrid Hg(0) concentrations from the global model ensemble of 
-; Dastoor et al., Nature Geoscience, 2022, to CAM-Chem model output. This is 
-; regridded to the WRF grid by the mozbc preprocessor. Hg concentrations 
+; Dastoor et al., Nature Geoscience, 2022, to CAM-Chem model output. Data for 
+; this variable is available upon request to Helene Angot. Hg(0) concentrations
+; are regridded to the WRF grid by the mozbc preprocessor. Hg concentrations 
 ; are on a curvilinear grid and are regridded the CAM-Chem grid using the 
 ; ESMF regrid function in NCL.
 ; 
