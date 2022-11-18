@@ -1,6 +1,8 @@
 ;----------------------------------------------------------------------
 ; Script to regrid Hg emissions (Hg0, Hg2, HgP) from the GMA 2015 inventory 
-; to the WRF grid. Hg emissions are on a curvilinear grid and are regridded 
+; to the WRF grid. Data for the Hg emissions inventory can be accessed at:
+; https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/SZ2KOI
+; Hg emissions are on a curvilinear grid and are regridded 
 ; to the WRF grid using the ESMF regrid function in NCL.
 ; 
 ; Shaddy Ahmed 18/11/2022
